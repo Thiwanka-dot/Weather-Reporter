@@ -48,6 +48,10 @@
     border-radius: 15px;
 }
 
+.searchBox input:focus{
+    outline: none;
+}
+
 .searchBox button{
     border: none;
     padding: 5px 7px;
@@ -117,11 +121,15 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    min-height: 40vh;
+    min-height: 50vh;
 }
 
 .locText{
     margin: 0.67em 0;
+}
+
+.locTitle h4{
+    color: #ccc;
 }
 
 /* weather */
@@ -143,7 +151,6 @@
 .weatherInfo ul li{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
     border: 1.5px solid #ffeb3b;
     padding: 15px 10px;
@@ -152,7 +159,7 @@
 }
 
 .weatherInfo ul li span{
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #ffeb3b;
 }
@@ -186,12 +193,16 @@
     }
 
     .locationInfo h1{
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     .locDetails{
         flex-direction: row;
         width: 100%;
         min-height: 0;
+    }
+
+    .locTitle{
+        text-align: right;
     }
 }
